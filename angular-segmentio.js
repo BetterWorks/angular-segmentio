@@ -31,12 +31,12 @@ angular.module('segmentio', ['ng'])
             }
 
             // Listening to $viewContentLoaded event to track pageview
-            $rootScope.$on('$viewContentLoaded', function() {
-                if (service.location != $location.path()) {
-                    service.location = $location.path();
-                    service.pageview(service.location);
-                }
-            });
+            // $rootScope.$on('$viewContentLoaded', function() {
+            //     if (service.location != $location.path()) {
+            //         service.location = $location.path();
+            //         service.pageview(service.location);
+            //     }
+            // });
 
             /**
              * @description
